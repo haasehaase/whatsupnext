@@ -15,6 +15,7 @@
 		C55CB36722BA8EDF00E2A0C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55CB36522BA8EDF00E2A0C4 /* LaunchScreen.storyboard */; };
 		C55CB37222BA8EDF00E2A0C4 /* whatsupnextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB37122BA8EDF00E2A0C4 /* whatsupnextTests.swift */; };
 		C55CB37D22BA8EDF00E2A0C4 /* whatsupnextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB37C22BA8EDF00E2A0C4 /* whatsupnextUITests.swift */; };
+		C55CB38E22BA9CA000E2A0C4 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB38D22BA9CA000E2A0C4 /* EventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C55CB37822BA8EDF00E2A0C4 /* whatsupnextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatsupnextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55CB37C22BA8EDF00E2A0C4 /* whatsupnextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsupnextUITests.swift; sourceTree = "<group>"; };
 		C55CB37E22BA8EDF00E2A0C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55CB38D22BA9CA000E2A0C4 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,10 @@
 			children = (
 				C55CB35A22BA8EDE00E2A0C4 /* AppDelegate.swift */,
 				C55CB35C22BA8EDE00E2A0C4 /* SceneDelegate.swift */,
+				C55CB38C22BA97D100E2A0C4 /* Model */,
+				C55CB38B22BA97C100E2A0C4 /* ViewModel */,
 				C55CB35E22BA8EDE00E2A0C4 /* ContentView.swift */,
+				C55CB38A22BA97B000E2A0C4 /* View */,
 				C55CB36022BA8EDF00E2A0C4 /* Assets.xcassets */,
 				C55CB36522BA8EDF00E2A0C4 /* LaunchScreen.storyboard */,
 				C55CB36822BA8EDF00E2A0C4 /* Info.plist */,
@@ -134,6 +139,28 @@
 				C55CB37E22BA8EDF00E2A0C4 /* Info.plist */,
 			);
 			path = whatsupnextUITests;
+			sourceTree = "<group>";
+		};
+		C55CB38A22BA97B000E2A0C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C55CB38B22BA97C100E2A0C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C55CB38C22BA97D100E2A0C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C55CB38D22BA9CA000E2A0C4 /* EventModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +296,7 @@
 			files = (
 				C55CB35B22BA8EDE00E2A0C4 /* AppDelegate.swift in Sources */,
 				C55CB35D22BA8EDE00E2A0C4 /* SceneDelegate.swift in Sources */,
+				C55CB38E22BA9CA000E2A0C4 /* EventModel.swift in Sources */,
 				C55CB35F22BA8EDE00E2A0C4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
