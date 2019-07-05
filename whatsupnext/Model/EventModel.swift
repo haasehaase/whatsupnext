@@ -8,9 +8,6 @@
 
 import SwiftUI
 
-struct EventModel:
-    Decodable {
-    var title: String
-    var hashtag: String
-    var date: Date
-}
+var event1 = "Kebap-Konferenz"
+
+
