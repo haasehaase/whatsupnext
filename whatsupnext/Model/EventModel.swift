@@ -8,6 +8,10 @@
 
 import SwiftUI
 
-var event1 = "Kebap-Konferenz"
+struct EventModel: Identifiable, Codable{ //Check: wann Struct, wann Class
+    var id: Int
+    var name: String
+    var hashtag: String
+}
 
-
+var event1 = EventModel(id: 1, name: "Kebap-Connection", hashtag: "#DönerMachtSchöner")

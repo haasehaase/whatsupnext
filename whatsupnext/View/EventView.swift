@@ -13,9 +13,14 @@ struct EventView : View {
     @ObjectBinding var viewModel: EventViewModel = EventViewModel()
     
     var body: some View {
-        Text(viewModel.event)
+        VStack {
+                Text(viewModel.event.name)
+                    .font(.title)
+                Text(viewModel.event.hashtag)
+                    .font(.subheadline)
+        }
+    
     }
-   
 }
 
 #if DEBUG
