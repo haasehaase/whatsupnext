@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-public class EventViewModel: BindableObject{
+public class EventViewModel: ObservableObject {
     init() {
         self.event = EventViewModel.loadJson(fileName: "Event")
     }

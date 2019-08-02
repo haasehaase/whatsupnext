@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 
 struct EventView : View {
-    @ObjectBinding var viewModel: EventViewModel = EventViewModel()
+    @ObservedObject var viewModel: EventViewModel = EventViewModel()
     
     var body: some View {
         VStack {
