@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51D506422C3D7FE00E4CCAA /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = C51D506322C3D7FD00E4CCAA /* Event.json */; };
+		C51D506622C3DE5F00E4CCAA /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D506522C3DE5F00E4CCAA /* EventView.swift */; };
 		C55CB35B22BA8EDE00E2A0C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB35A22BA8EDE00E2A0C4 /* AppDelegate.swift */; };
 		C55CB35D22BA8EDE00E2A0C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB35C22BA8EDE00E2A0C4 /* SceneDelegate.swift */; };
-		C55CB35F22BA8EDE00E2A0C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB35E22BA8EDE00E2A0C4 /* ContentView.swift */; };
 		C55CB36122BA8EDF00E2A0C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55CB36022BA8EDF00E2A0C4 /* Assets.xcassets */; };
 		C55CB36422BA8EDF00E2A0C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55CB36322BA8EDF00E2A0C4 /* Preview Assets.xcassets */; };
 		C55CB36722BA8EDF00E2A0C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55CB36522BA8EDF00E2A0C4 /* LaunchScreen.storyboard */; };
 		C55CB37222BA8EDF00E2A0C4 /* whatsupnextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB37122BA8EDF00E2A0C4 /* whatsupnextTests.swift */; };
 		C55CB37D22BA8EDF00E2A0C4 /* whatsupnextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB37C22BA8EDF00E2A0C4 /* whatsupnextUITests.swift */; };
+		C55CB38E22BA9CA000E2A0C4 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55CB38D22BA9CA000E2A0C4 /* EventModel.swift */; };
+		C582C08A22C28C9B00DEAB2A /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582C08922C28C9B00DEAB2A /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51D506322C3D7FD00E4CCAA /* Event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
+		C51D506522C3DE5F00E4CCAA /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		C55CB35722BA8EDE00E2A0C4 /* whatsupnext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsupnext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55CB35A22BA8EDE00E2A0C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55CB35C22BA8EDE00E2A0C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C55CB35E22BA8EDE00E2A0C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C55CB36022BA8EDF00E2A0C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C55CB36322BA8EDF00E2A0C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C55CB36622BA8EDF00E2A0C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		C55CB37822BA8EDF00E2A0C4 /* whatsupnextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatsupnextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55CB37C22BA8EDF00E2A0C4 /* whatsupnextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsupnextUITests.swift; sourceTree = "<group>"; };
 		C55CB37E22BA8EDF00E2A0C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55CB38D22BA9CA000E2A0C4 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		C582C08922C28C9B00DEAB2A /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 			children = (
 				C55CB35A22BA8EDE00E2A0C4 /* AppDelegate.swift */,
 				C55CB35C22BA8EDE00E2A0C4 /* SceneDelegate.swift */,
-				C55CB35E22BA8EDE00E2A0C4 /* ContentView.swift */,
+				C55CB38C22BA97D100E2A0C4 /* Model */,
+				C55CB38B22BA97C100E2A0C4 /* ViewModel */,
+				C55CB38A22BA97B000E2A0C4 /* View */,
 				C55CB36022BA8EDF00E2A0C4 /* Assets.xcassets */,
 				C55CB36522BA8EDF00E2A0C4 /* LaunchScreen.storyboard */,
 				C55CB36822BA8EDF00E2A0C4 /* Info.plist */,
+				C5D0D10522C3D60B00BA923B /* MockAPIResponses */,
 				C55CB36222BA8EDF00E2A0C4 /* Preview Content */,
 			);
 			path = whatsupnext;
@@ -134,6 +143,38 @@
 				C55CB37E22BA8EDF00E2A0C4 /* Info.plist */,
 			);
 			path = whatsupnextUITests;
+			sourceTree = "<group>";
+		};
+		C55CB38A22BA97B000E2A0C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C51D506522C3DE5F00E4CCAA /* EventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C55CB38B22BA97C100E2A0C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C582C08922C28C9B00DEAB2A /* EventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C55CB38C22BA97D100E2A0C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C55CB38D22BA9CA000E2A0C4 /* EventModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5D0D10522C3D60B00BA923B /* MockAPIResponses */ = {
+			isa = PBXGroup;
+			children = (
+				C51D506322C3D7FD00E4CCAA /* Event.json */,
+			);
+			path = MockAPIResponses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51D506422C3D7FE00E4CCAA /* Event.json in Resources */,
 				C55CB36722BA8EDF00E2A0C4 /* LaunchScreen.storyboard in Resources */,
 				C55CB36422BA8EDF00E2A0C4 /* Preview Assets.xcassets in Resources */,
 				C55CB36122BA8EDF00E2A0C4 /* Assets.xcassets in Resources */,
@@ -269,7 +311,9 @@
 			files = (
 				C55CB35B22BA8EDE00E2A0C4 /* AppDelegate.swift in Sources */,
 				C55CB35D22BA8EDE00E2A0C4 /* SceneDelegate.swift in Sources */,
-				C55CB35F22BA8EDE00E2A0C4 /* ContentView.swift in Sources */,
+				C55CB38E22BA9CA000E2A0C4 /* EventModel.swift in Sources */,
+				C582C08A22C28C9B00DEAB2A /* EventViewModel.swift in Sources */,
+				C51D506622C3DE5F00E4CCAA /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
