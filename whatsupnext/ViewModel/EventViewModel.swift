@@ -10,13 +10,24 @@ import SwiftUI
 import Combine
 
 public class EventViewModel: ObservableObject {
-    init() {
-        self.event = EventViewModel.loadJson(fileName: "Event")
-    }
     
     public let didChange = PassthroughSubject<Void, Never>()
     
-    static func loadJson(fileName: String) -> EventModel? {
+    var event: EventModel? {
+        didSet{
+            self.didChange.send(())
+        }
+    }
+    
+//    init(from eventModel: EventModel) {
+//        self.event = eventModel
+//    }
+
+    init(fromJsonFile jsonFileName: String) {
+        self.event = loadJson(fileName: jsonFileName)
+    }
+    
+    func loadJson(fileName: String) -> EventModel? {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
@@ -24,16 +35,11 @@ public class EventViewModel: ObservableObject {
                 let jsonData = try decoder.decode(EventModel.self, from: data)
                 return jsonData
             } catch {
-                print("error:\(error)")
+                print("Error: \(error.localizedDescription)")
             }
         }
         return nil
     }
     
-    var event: EventModel?{
-    didSet{
-        self.didChange.send(())
-        }
-    }
 }
 

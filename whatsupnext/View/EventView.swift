@@ -9,24 +9,25 @@
 import SwiftUI
 import Combine
 
-struct EventView : View {
-    @ObservedObject var viewModel: EventViewModel = EventViewModel()
+struct EventView: View {
+    
+    @ObservedObject var viewModel: EventViewModel = EventViewModel(fromJsonFile: "Event")
     
     var body: some View {
         VStack {
             Text(viewModel.event!.title)
-                    .font(.title)
-                Text(viewModel.event!.hashtag)
-                    .font(.subheadline)
+                .font(.title)
+            Text(viewModel.event!.hashtag)
+                .font(.subheadline)
         }
-    
     }
+    
 }
 
 #if DEBUG
-struct EventView_Previews : PreviewProvider {
+struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView(viewModel: EventViewModel())
+        EventView(viewModel: EventViewModel(fromJsonFile: "Event"))
     }
 }
 #endif

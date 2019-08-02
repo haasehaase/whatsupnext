@@ -8,13 +8,8 @@
 
 import SwiftUI
 
-
-struct EventModel: Identifiable, Codable{ //Check: wann Struct, wann Class
+struct EventModel: Identifiable, Codable {
     var id: Int
     var title: String
     var hashtag: String
 }
-
-
-
-
