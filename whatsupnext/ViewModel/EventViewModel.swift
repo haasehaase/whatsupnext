@@ -10,9 +10,27 @@ import SwiftUI
 import Combine
 
 public class EventViewModel: BindableObject{
+    init() {
+        self.event = EventViewModel.loadJson(fileName: "Event")
+    }
+    
     public let didChange = PassthroughSubject<Void, Never>()
     
-    var event = event1{
+    static func loadJson(fileName: String) -> EventModel? {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode(EventModel.self, from: data)
+                return jsonData
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return nil
+    }
+    
+    var event: EventModel?{
     didSet{
         self.didChange.send(())
         }

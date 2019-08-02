@@ -14,9 +14,9 @@ struct EventView : View {
     
     var body: some View {
         VStack {
-                Text(viewModel.event.name)
+            Text(viewModel.event!.title)
                     .font(.title)
-                Text(viewModel.event.hashtag)
+                Text(viewModel.event!.hashtag)
                     .font(.subheadline)
         }
     
